@@ -31,6 +31,7 @@ const ContainerNav = styled.nav`
     position: fixed;
     right: 0;
     left: 0;
+    z-index: 10;
 `
 
 const LogoImg = styled.figure`
