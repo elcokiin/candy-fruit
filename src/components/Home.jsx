@@ -9,7 +9,7 @@ function Home() {
         <div>
             <Section />
             <Map
-                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback"
+                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFD9HQ1uWxioTBZRW6XnJA2LFiantUhCk"
                 containerElement= {<div style={{height: '100vh'}}/>}
                 mapElement= {<div style={{height: '100%'}}/>}
                 loadingElement= {<p>Cargando ...</p>}

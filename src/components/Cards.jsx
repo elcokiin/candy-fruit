@@ -17,7 +17,7 @@ function Cards() {
                     <p>3197293579</p>
                 </Content>
                 <ContentBack>
-                    <img src={Logo}></img>
+                    <img src={Logo} alt="logo"></img>
                     <div>
                         <p><strong>Email </strong>candy-fruit@gmail.com</p>
                         <p><strong>N° em </strong>3125002141</p>
@@ -36,7 +36,7 @@ function Cards() {
                         <p>3207318994</p>
                     </Content>
                     <ContentBack>
-                        <img src={Logo}></img>
+                        <img src={Logo} alt="logo"></img>
                         <div>
                             <p><strong>Email </strong>candy-fruit@gmail.com</p>
                             <p><strong>N° em </strong>3125002141</p>
@@ -55,7 +55,7 @@ function Cards() {
                     <p>3106924373</p>
                 </Content>
                 <ContentBack>
-                    <img src={Logo}></img>
+                    <img src={Logo} alt="logo"></img>
                     <div>
                         <p><strong>Email </strong>candy-fruit@gmail.com</p>
                         <p><strong>N° em </strong>3125002141</p>
