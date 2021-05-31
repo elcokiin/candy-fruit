@@ -28,7 +28,6 @@ const ContainerNav = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    position: fixed;
     right: 0;
     left: 0;
     z-index: 10;
