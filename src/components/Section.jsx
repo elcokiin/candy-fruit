@@ -1,14 +1,17 @@
 import React from 'react'
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import Background from '../assets/images/background-home.jpg'
 
 function Section() {
     return (
-        <Wrap>
+        <Wrap id='home'>
             <ItemText>
-                <h1>Disfruta de tu Snack con Tranquilidad</h1>
-                <h3>Prueba Candy Fruit</h3>
+                <Fade bottom>
+                    <h1>Disfruta de tu Snack con Tranquilidad</h1>
+                    <h3>Prueba Candy Fruit</h3>
+                </Fade>
             </ItemText>
             <DownArrow>
             🡫

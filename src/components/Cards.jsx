@@ -1,39 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
+import Fade from 'react-reveal/Fade';
 
 import BackgroundCard from '../assets/images/background-card.png';
 import Logo from '../assets/images/logo.svg';
 
 function Cards() {
     return (
-        <ContainerCards>
-            <WrapCard>
-            <Card>
-                <img src={BackgroundCard} alt="Presentation Card"></img>
-                <Content>
-                    <h1>Diego Fernando</h1>
-                    <h1>Aguirre Tenjo</h1>
-                    <p>Gerente</p>
-                    <p>3197293579</p>
-                </Content>
-                <ContentBack>
-                    <img src={Logo} alt="logo"></img>
-                    <div>
-                        <p><strong>Email </strong>candy-fruit@gmail.com</p>
-                        <p><strong>N° em </strong>3125002141</p>
-                    </div>
-                </ContentBack>
-            </Card>
-            </WrapCard>
-
-            <WrapCard>
+        <ContainerCards id='cards'>
+            <Fade bottom>
+                <WrapCard>
                 <Card>
                     <img src={BackgroundCard} alt="Presentation Card"></img>
                     <Content>
-                        <h1>Julian Alejandro</h1>
-                        <h1>Archila Caro</h1>
+                        <h1>Diego Fernando</h1>
+                        <h1>Aguirre Tenjo</h1>
                         <p>Gerente</p>
-                        <p>3207318994</p>
+                        <p>3197293579</p>
                     </Content>
                     <ContentBack>
                         <img src={Logo} alt="logo"></img>
@@ -43,26 +26,53 @@ function Cards() {
                         </div>
                     </ContentBack>
                 </Card>
-            </WrapCard>
+                </WrapCard>
+            </Fade>
 
-            <WrapCard>
-            <Card>
-                <img src={BackgroundCard} alt="Presentation Card"></img>
-                <Content>
-                    <h1>Yeison Javier</h1>
-                    <h1>Arias Silva</h1>
-                    <p>Gerente</p>
-                    <p>3106924373</p>
-                </Content>
-                <ContentBack>
-                    <img src={Logo} alt="logo"></img>
-                    <div>
-                        <p><strong>Email </strong>candy-fruit@gmail.com</p>
-                        <p><strong>N° em </strong>3125002141</p>
-                    </div>
-                </ContentBack>
-            </Card>
-            </WrapCard>
+            <Fade bottom>
+                <WrapCard>
+                    <Card>
+                        <img src={BackgroundCard} alt="Presentation Card"></img>
+                        <Content>
+                            <h1>Julian Alejandro</h1>
+                            <h1>Archila Caro</h1>
+                            <p>Gerente</p>
+                            <p>3207318994</p>
+                        </Content>
+                        <ContentBack>
+                            <img src={Logo} alt="logo"></img>
+                            <div>
+                                <p><strong>Email </strong>candy-fruit@gmail.com</p>
+                                <p><strong>N° em </strong>3125002141</p>
+                            </div>
+                        </ContentBack>
+                    </Card>
+                </WrapCard>
+            </Fade>
+
+            <Fade bottom>
+                <WrapCard>
+                <Card>
+                    <img src={BackgroundCard} alt="Presentation Card"></img>
+                    <Content>
+                        <h1>Yeison Javier</h1>
+                        <h1>Arias Silva</h1>
+                        <p>Gerente</p>
+                        <p>3106924373</p>
+                    </Content>
+                    <ContentBack>
+                        <img src={Logo} alt="logo"></img>
+                        <div>
+                            <p><strong>Email </strong>candy-fruit@gmail.com</p>
+                            <p><strong>N° em </strong>3125002141</p>
+                        </div>
+                    </ContentBack>
+                </Card>
+                </WrapCard>
+            </Fade>
+            <DownArrow>
+            🡫
+            </DownArrow>
         </ContainerCards>
     )
 }
@@ -131,7 +141,7 @@ const ContentBack = styled.div`
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     transform: rotateY(180deg);
-    background: #F3EBEB;
+    background: #F1F3EB;
     img {
         width: 100%;
         height: 100%;
@@ -149,4 +159,10 @@ const ContentBack = styled.div`
             font-family: sans-serif;
         }
     }
+`
+const DownArrow = styled.div`
+    font-size: 60px;
+    color: #000;
+    animation: animateDown infinite 1.5s;
+    margin-left: 20px;
 `
