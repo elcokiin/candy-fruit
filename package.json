@@ -2,7 +2,7 @@
   "name": "candy-fruit",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tenjodiego961.github.io/Candy-Fruit",
+  "homepage": "tenjodiego961.github.io/candy-fruit",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
