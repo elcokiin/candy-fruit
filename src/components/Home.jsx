@@ -9,13 +9,13 @@ function Home() {
     return (
         <ContainerHome>
             <section>
-                <Section className='sections-home'/>
+                <Section />
             </section>
             <section>
-                <Cards className='sections-home'/>
+                <Cards />
             </section>
             <section>
-            <Map className='sections-home'
+            <Map
                 googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFD9HQ1uWxioTBZRW6XnJA2LFiantUhCk"
                 containerElement= {<div style={{height: '100vh'}}/>}
                 mapElement= {<div style={{height: '100%'}}/>}
@@ -30,10 +30,9 @@ function Home() {
 export default Home;
 
 const ContainerHome = styled.div`
-    -webkit-scroll-snap-type: y mandatory;
     scroll-snap-type: y mandatory;
+    overflow-y: scroll;
     section {
-        -webkit-scroll-snap-align: center;
         scroll-snap-align: center;
     }
 `
