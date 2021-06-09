@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/tenjodiego961.github.io/candy-fruit/static/css/main.3dbcfb33.chunk.css",
+    "main.js": "/tenjodiego961.github.io/candy-fruit/static/js/main.79e8eed0.chunk.js",
+    "main.js.map": "/tenjodiego961.github.io/candy-fruit/static/js/main.79e8eed0.chunk.js.map",
+    "runtime-main.js": "/tenjodiego961.github.io/candy-fruit/static/js/runtime-main.0646dfd0.js",
+    "runtime-main.js.map": "/tenjodiego961.github.io/candy-fruit/static/js/runtime-main.0646dfd0.js.map",
+    "static/js/2.448e4fba.chunk.js": "/tenjodiego961.github.io/candy-fruit/static/js/2.448e4fba.chunk.js",
+    "static/js/2.448e4fba.chunk.js.map": "/tenjodiego961.github.io/candy-fruit/static/js/2.448e4fba.chunk.js.map",
+    "index.html": "/tenjodiego961.github.io/candy-fruit/index.html",
+    "static/css/main.3dbcfb33.chunk.css.map": "/tenjodiego961.github.io/candy-fruit/static/css/main.3dbcfb33.chunk.css.map",
+    "static/js/2.448e4fba.chunk.js.LICENSE.txt": "/tenjodiego961.github.io/candy-fruit/static/js/2.448e4fba.chunk.js.LICENSE.txt",
+    "static/media/background-card.fcc3f2c1.png": "/tenjodiego961.github.io/candy-fruit/static/media/background-card.fcc3f2c1.png",
+    "static/media/background-home.67f5dee4.jpg": "/tenjodiego961.github.io/candy-fruit/static/media/background-home.67f5dee4.jpg",
+    "static/media/logo.4e81ff79.svg": "/tenjodiego961.github.io/candy-fruit/static/media/logo.4e81ff79.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0646dfd0.js",
+    "static/js/2.448e4fba.chunk.js",
+    "static/css/main.3dbcfb33.chunk.css",
+    "static/js/main.79e8eed0.chunk.js"
+  ]
+}
