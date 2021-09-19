@@ -2,7 +2,10 @@ import React from 'react'
 import styled from 'styled-components';
 import Fade from 'react-reveal/Fade';
 
-import Background from '../assets/images/background-home.jpg'
+import Background from '../assets/images/background-home.jpg';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 function Section() {
     return (
@@ -14,7 +17,7 @@ function Section() {
                 </Fade>
             </ItemText>
             <DownArrow>
-            🡫
+                <FontAwesomeIcon icon={faArrowDown} />
             </DownArrow>
         </Wrap>
     )
@@ -24,7 +27,7 @@ export default Section;
 
 const Wrap = styled.div`
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     background-position: center;
     background-image: url(${Background});
     display: flex;
@@ -39,7 +42,8 @@ const ItemText = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 30vh;
-    text-shadow: 0 0 15px #fefefe;
+    text-shadow: 0 0 20px #fefefe;
+    font-size: 2rem;
 `
 const DownArrow = styled.div`
     font-size: 60px;

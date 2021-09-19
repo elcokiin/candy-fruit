@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Section from './Section';
 import Cards from './Cards';
 import Map from './Map';
+import Product from "./Product";
 
 function Home() {
     return (
@@ -15,13 +16,16 @@ function Home() {
                 <Cards />
             </section>
             <section>
-            <Map
-                googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFD9HQ1uWxioTBZRW6XnJA2LFiantUhCk"
-                containerElement= {<div style={{height: '100vh'}}/>}
-                mapElement= {<div style={{height: '100%'}}/>}
-                loadingElement= {<p>Cargando ...</p>}
-                isMarkerShown={true}
-            />
+                <Product />
+            </section>
+            <section>
+                <Map
+                    googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyBFD9HQ1uWxioTBZRW6XnJA2LFiantUhCk"
+                    containerElement= {<div style={{height: '100vh'}}/>}
+                    mapElement= {<div style={{height: '100%'}}/>}
+                    loadingElement= {<p>Cargando ...</p>}
+                    isMarkerShown={true}
+                />
             </section>
         </ContainerHome>
     )

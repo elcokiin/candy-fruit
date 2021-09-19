@@ -1,87 +1,57 @@
 import React from 'react';
 import styled from 'styled-components';
-import Fade from 'react-reveal/Fade';
+
+import workers from "../data/workers"
 
 import BackgroundCard from '../assets/images/background-card.png';
 import Logo from '../assets/images/logo.svg';
 
 function Cards() {
     return (
-        <ContainerCards id='cards'>
-            <Fade bottom>
-                <WrapCard>
-                <Card>
-                    <img src={BackgroundCard} alt="Presentation Card"></img>
-                    <Content>
-                        <h1>Diego Fernando</h1>
-                        <h1>Aguirre Tenjo</h1>
-                        <p>Gerente</p>
-                        <p>3197293579</p>
-                    </Content>
-                    <ContentBack>
-                        <img src={Logo} alt="logo"></img>
-                        <div>
-                            <p><strong>Email </strong>candy-fruit@gmail.com</p>
-                            <p><strong>N° em </strong>3125002141</p>
-                        </div>
-                    </ContentBack>
-                </Card>
-                </WrapCard>
-            </Fade>
-
-            <Fade bottom>
-                <WrapCard>
-                    <Card>
-                        <img src={BackgroundCard} alt="Presentation Card"></img>
-                        <Content>
-                            <h1>Julian Alejandro</h1>
-                            <h1>Archila Caro</h1>
-                            <p>Gerente</p>
-                            <p>3207318994</p>
-                        </Content>
-                        <ContentBack>
-                            <img src={Logo} alt="logo"></img>
-                            <div>
-                                <p><strong>Email </strong>candy-fruit@gmail.com</p>
-                                <p><strong>N° em </strong>3125002141</p>
-                            </div>
-                        </ContentBack>
-                    </Card>
-                </WrapCard>
-            </Fade>
-
-            <Fade bottom>
-                <WrapCard>
-                <Card>
-                    <img src={BackgroundCard} alt="Presentation Card"></img>
-                    <Content>
-                        <h1>Yeison Javier</h1>
-                        <h1>Arias Silva</h1>
-                        <p>Gerente</p>
-                        <p>3106924373</p>
-                    </Content>
-                    <ContentBack>
-                        <img src={Logo} alt="logo"></img>
-                        <div>
-                            <p><strong>Email </strong>candy-fruit@gmail.com</p>
-                            <p><strong>N° em </strong>3125002141</p>
-                        </div>
-                    </ContentBack>
-                </Card>
-                </WrapCard>
-            </Fade>
-            <DownArrow>
-            🡫
-            </DownArrow>
-        </ContainerCards>
+        <>
+            <Title id='cards'>Tarjetas de presentación</Title>
+            <ContainerCards>
+                {workers.map(worker => (
+                        <WrapCard key={worker.id}>
+                            <Card>
+                                <img src={BackgroundCard} alt="Presentation Card"></img>
+                                <Content>
+                                    <h1>{worker.name}</h1>
+                                    <h1>{worker.lastName}</h1>
+                                    <p>{worker.charge}</p>
+                                    <p>{worker.cellNumber}</p>
+                                </Content>
+                                <ContentBack>
+                                    <img src={Logo} alt="logo"></img>
+                                    <div>
+                                        <p><strong>Email </strong>candy-fruit@gmail.com</p>
+                                        <p><strong>N° em </strong>3125002141</p>
+                                    </div>
+                                </ContentBack>
+                            </Card>
+                        </WrapCard>
+                ))}
+            </ContainerCards>
+        </>
     )
 }
 
 export default Cards;
 
+const Title = styled.h1`
+    width: 100%;
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 30px;
+    font-size: 2rem;
+    font-weight: 200;
+`
+
 const ContainerCards = styled.section`
     width: 100vw;
-    height: 100vh;
+    min-height: 50vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -95,7 +65,7 @@ const Card = styled.div`
     width: 30rem;
     height: 16rem;
     position: relative;
-    box-shadow: 0 0 10px #111;
+    box-shadow: 0 0 50px 5px #D7D7D7;
     border-radius: 4px;
     transform-style: preserve-3d;
     transition: .7s ease;
@@ -164,5 +134,4 @@ const DownArrow = styled.div`
     font-size: 60px;
     color: #000;
     animation: animateDown infinite 1.5s;
-    margin-left: 20px;
 `

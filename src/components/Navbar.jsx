@@ -16,17 +16,18 @@ function Navbar() {
             <LogoImg>
                 <img src={Logo} alt="Candy Fruit"></img>
             </LogoImg>
-            <Menu>
+            <Menu onClick={changeMenu}>
                 <FontAwesomeIcon icon={faBars} />
-                <span onClick={changeMenu}>Menu</span>
+                <span>Menu</span>
             </Menu>
             <BurgerNav show={openMenu}>
-                <CloseWrapper>
-                    <button onClick={changeMenu}>x</button>
+                <CloseWrapper onClick={changeMenu}>
+                    <button>x</button>
                 </CloseWrapper>
-                <li><a href='#home'>Inicio</a></li>
-                <li><a href='#cards'>Tarjetas de presentacion</a></li>
-                <li><a href='#map'>Localizanos</a></li>
+                    <li><a href='#home'>Inicio</a></li>
+                    <li><a href='#cards'>Tarjetas de presentacion</a></li>
+                    <li><a href="#product">Producto</a></li>
+                    <li><a href='#map'>Localizanos</a></li>
             </BurgerNav>
         </ContainerNav>
     )
@@ -62,15 +63,17 @@ const Menu = styled.button`
     border-top: none;
     border-right: none;
     border-left: none;
-    font-size: 15px;
+    font-size: 25px;
     transition: 250ms;
     margin-right: 5%;
 
     span {
         margin-left: 5px;
+        font-weight: 500;
+        font-size: 25px;
     }
     &:hover {
-        transform: scale(1.3);
+        transform: scale(1.05);
         opacity: 0.95;
     }
 `
@@ -82,7 +85,7 @@ const BurgerNav = styled.div`
     background-color: #f9f9f9;
     width: 300px;
     z-index: 12;
-    padding: 20px;
+    padding: 25px;
     list-style: none;
     display: flex;
     flex-direction: column;
