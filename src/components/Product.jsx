@@ -2,35 +2,29 @@ import React from "react";
 import styled from 'styled-components';
 
 import product from "../assets/images/cubitos-de-fruta-confitada_surtido.jpg";
+import audio from "../assets/audio/Avisopublicitario.mp3";
 
 const Product = () => {
     return(
-        <div id="product">
-            <Title>Producto</Title>
+        <div>
             <Container>
                 <img src={product} alt="product"></img>
-                <p>
-                    La fruta confitada a base de tomate de árbol, está pensada
-                    para que el consumidor disfrute y apoye a los aguiculturos
-                    encargados de proveernos esta deliciosa fruta.
-                </p>
+                <div>
+                    <p>
+                        La fruta confitada a base de tomate de árbol, está pensada
+                        para que el consumidor disfrute y apoye a los aguicultores
+                        encargados de proveernos esta deliciosa fruta.
+                    </p>
+                    <audio controls>
+                        <source src={audio} />
+                    </audio>
+                </div>
             </Container>
         </div>
     )
 }
 
 export default Product;
-
-const Title = styled.h1`
-    width: 100%;
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 30px;
-    font-size: 2rem;
-    font-weight: 200;
-`
 
 const Container = styled.div`
     display: flex;
@@ -44,7 +38,13 @@ const Container = styled.div`
         width: 40%;
         object-fit: cover;
     }
-    p {
+    div {
         width: 20%;
+        display: flex;
+        flex-direction: column;
+        p {
+            padding: 20px 0;
+            font-family: sans-serif;
+        }
     }
 `

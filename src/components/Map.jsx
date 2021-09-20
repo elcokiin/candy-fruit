@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
     GoogleMap,
     withScriptjs,
@@ -8,7 +9,7 @@ import {
 
 function Map(props) {
     return (
-        <div id='map'>
+        <div>
             <GoogleMap
                 defaultZoom={13}
                 defaultCenter={{ lat: 5.408300, lng:-73.295890 }}

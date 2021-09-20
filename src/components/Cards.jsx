@@ -9,7 +9,6 @@ import Logo from '../assets/images/logo.svg';
 function Cards() {
     return (
         <>
-            <Title id='cards'>Tarjetas de presentación</Title>
             <ContainerCards>
                 {workers.map(worker => (
                         <WrapCard key={worker.id}>
@@ -38,16 +37,6 @@ function Cards() {
 
 export default Cards;
 
-const Title = styled.h1`
-    width: 100%;
-    margin: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    padding: 30px;
-    font-size: 2rem;
-    font-weight: 200;
-`
 
 const ContainerCards = styled.section`
     width: 100vw;
@@ -129,9 +118,4 @@ const ContentBack = styled.div`
             font-family: sans-serif;
         }
     }
-`
-const DownArrow = styled.div`
-    font-size: 60px;
-    color: #000;
-    animation: animateDown infinite 1.5s;
 `

@@ -7,6 +7,7 @@ import {
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <Switch>
                 <Route path='/' component={Home}/>
             </Switch>
+            <Footer />
         </Router>
     )
 }

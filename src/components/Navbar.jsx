@@ -13,7 +13,7 @@ function Navbar() {
     }
     return (
         <ContainerNav>
-            <LogoImg>
+            <LogoImg href="/">
                 <img src={Logo} alt="Candy Fruit"></img>
             </LogoImg>
             <Menu onClick={changeMenu}>
@@ -25,9 +25,10 @@ function Navbar() {
                     <button>x</button>
                 </CloseWrapper>
                     <li><a href='#home'>Inicio</a></li>
-                    <li><a href='#cards'>Tarjetas de presentacion</a></li>
                     <li><a href="#product">Producto</a></li>
+                    <li><a href="#cards">Tarjetas de presentación</a></li>
                     <li><a href='#map'>Localizanos</a></li>
+                    <li><a href='#contact'>Contactanos</a></li>
             </BurgerNav>
         </ContainerNav>
     )
@@ -47,7 +48,7 @@ const ContainerNav = styled.nav`
     z-index: 10;
 `
 
-const LogoImg = styled.figure`
+const LogoImg = styled.a`
     width: 180px;
     height: 150px;
     img {
@@ -59,22 +60,20 @@ const LogoImg = styled.figure`
 const Menu = styled.button`
     cursor: pointer;
     background: none;
+    border: 2px solid #000;
     padding: 8px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    font-size: 25px;
+    font-size: 22px;
     transition: 250ms;
-    margin-right: 5%;
+    margin-top: -25px;
+    margin-right: 2px;
 
     span {
-        margin-left: 5px;
-        font-weight: 500;
-        font-size: 25px;
+        padding-left: 8px;
+        font-weight: 400;
+        font-size: 22px;
     }
     &:hover {
-        transform: scale(1.05);
-        opacity: 0.95;
+        background: rgba(0, 0, 0, 0.1)
     }
 `
 const BurgerNav = styled.div`
