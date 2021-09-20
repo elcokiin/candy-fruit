@@ -49,12 +49,17 @@ const ContainerNav = styled.nav`
 `
 
 const LogoImg = styled.a`
-    width: 180px;
-    height: 150px;
+    width: 150px;
+    height: 130px;
     img {
         width: 100%;
         height: 100%;
         object-fit: container;
+    }
+
+    @media (max-width: 770px) {
+        width: 110px;
+        height: 80px;
     }
 `
 const Menu = styled.button`
@@ -74,6 +79,12 @@ const Menu = styled.button`
     }
     &:hover {
         background: rgba(0, 0, 0, 0.1)
+    }
+    @media (max-width: 770px) {
+        font-size: 18px;
+        span {
+            font-size: 18px;
+        }
     }
 `
 const BurgerNav = styled.div`

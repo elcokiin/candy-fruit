@@ -8,7 +8,7 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 function Section() {
     return (
-        <div>
+        <Container>
             <BackgroundImg>
                 <img src={Background} alt="Background"/>
             </BackgroundImg>
@@ -21,11 +21,15 @@ function Section() {
                     <FontAwesomeIcon icon={faArrowDown} />
                 </DownArrow>
             </Wrap>
-        </div>
+        </Container>
     )
 }
 
 export default Section;
+
+const Container = styled.div`
+    overflow-x: hidden;
+`
 
 const BackgroundImg = styled.figure`
     z-index: -1;
@@ -57,6 +61,12 @@ const ItemText = styled.div`
     padding-top: 20vh;
     text-shadow: 0 0 20px #fefefe;
     font-size: 25px;
+    @media (max-width: 770px) {
+        font-size: 18px;
+        h1 {
+            display: none;
+        }
+    }
 `
 const DownArrow = styled.div`
     display: flex;
@@ -67,4 +77,9 @@ const DownArrow = styled.div`
     font-size: 60px;
     color: #000;
     animation: animateDown infinite 1.5s;
+    @media (max-width: 770px) {
+        font-size: 40px;
+        justify-content: center;
+        margin: 5px 0;
+    }
 `

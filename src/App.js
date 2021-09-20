@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-    BrowserRouter as Router,
-    Switch,
-    Route,
-} from 'react-router-dom';
+import styled from "styled-components";
 
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -11,14 +7,16 @@ import Footer from "./components/Footer";
 
 function App() {
     return (
-        <Router>
+        <Container>
             <Navbar />
-            <Switch>
-                <Route path='/' component={Home}/>
-            </Switch>
+            <Home />
             <Footer />
-        </Router>
+        </Container>
     )
 }
 
-export default App
+export default App;
+
+const Container = styled.div`
+    overflow-x: none;
+`

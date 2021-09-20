@@ -45,6 +45,7 @@ const ContainerCards = styled.section`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
 `
 const WrapCard = styled.div`
     margin: 10px;

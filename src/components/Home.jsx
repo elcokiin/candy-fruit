@@ -50,6 +50,10 @@ const Title = styled.h1`
     align-items: center;
     justify-content: start;
     padding: 30px;
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 200;
+    @media (max-width: 770px) {
+        font-size: 20px;
+        margin: 0 5px;
+    }
 `

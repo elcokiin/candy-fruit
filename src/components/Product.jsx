@@ -42,9 +42,21 @@ const Container = styled.div`
         width: 20%;
         display: flex;
         flex-direction: column;
+
         p {
             padding: 20px 0;
             font-family: sans-serif;
+        }
+    }
+
+    @media (max-width: 770px) {
+        overflow-x: scroll;
+        flex-direction: column;
+        img {
+            width: 90%;
+        }
+        div {
+            width: 90%;
         }
     }
 `
